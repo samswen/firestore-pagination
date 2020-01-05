@@ -12,6 +12,7 @@
 
     node import-json.js books.json
 
+</pre>
     // examples/demo.js
     //
     const admin = require('firebase-admin');
@@ -70,8 +71,8 @@
                 console.log('no data to list');
             }
     })();
-
-
+</pre>
+</pre>
     $ node demo.js 
 
     *** preview result: {"total":"> 100","cached_count":81}
@@ -113,9 +114,9 @@
 
     for current batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO
     for next batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO NEXT
+</pre>
 
-
-
+<pre>
     $ node interactive.js
 
     cleanup items: 0
@@ -161,8 +162,9 @@
     C Redo current pages (default)
     P Show previous pages
     N Show next pages
+</pre>
 
-
+<pre>
     $ node get-batch.js 9SVCj9yVtNQz9XhHyAvmBLe96jA 2
 
     ---------------------- batch no: 2 ----------------------
@@ -198,10 +200,10 @@
     batch_key: 9SVCj9yVtNQz9XhHyAvmBLe96jA-2r7nSAPOpSKJWv8EpruMm9jAmJekWghiMSF8gs
     start_page_no: 5 has_prev: true has_next: true
     metrics: {"read_docs":1,"write_docs":1,"delete_docs":0,"runtime":511}
-
+</pre>
 
 ## config file
-
+<pre>
     'use strict';
 
     const config = {
@@ -227,9 +229,9 @@
         promises_size: 256,             // promises size
         read_multiply: 2,               // when we have nodb filers, control how many additional docs to read
     }
-    
-    module.exports = config;
 
+    module.exports = config;
+</pre>
 
 
 
