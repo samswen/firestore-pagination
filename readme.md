@@ -9,6 +9,7 @@
 1. You will need generate private key under service accounts and save it as serviceAccount.json in the project root folder.
 2. There are 3 examples under examples folders: demo.js, interactive.js and get-batch.js.
 3. You can use the import-json.js to import books.json into your firestore database.
+
     node import-json.js books.json
 
     // examples/demo.js
@@ -23,9 +24,9 @@
     const config = new ConfigUtil(require('./config.js'));
 
     (async () => {
-
+    
         let batch_key = null, action = null;
-        
+
         if (process.argv.length > 2) {
             batch_key = process.argv[2];
         }
@@ -64,11 +65,12 @@
                 if (batch_pages.has_next) {
                     console.log('for next batch: \tnode demo.js ' + batch_pages.batch_key + ' NEXT')
                 }
-                
+    
             } else {
                 console.log('no data to list');
             }
     })();
+
 
     $ node demo.js 
 
@@ -111,6 +113,7 @@
 
     for current batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO
     for next batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO NEXT
+
 
 
     $ node interactive.js
@@ -159,6 +162,7 @@
     P Show previous pages
     N Show next pages
 
+
     $ node get-batch.js 9SVCj9yVtNQz9XhHyAvmBLe96jA 2
 
     ---------------------- batch no: 2 ----------------------
@@ -195,6 +199,7 @@
     start_page_no: 5 has_prev: true has_next: true
     metrics: {"read_docs":1,"write_docs":1,"delete_docs":0,"runtime":511}
 
+
 ## config file
 
     'use strict';
@@ -222,7 +227,7 @@
         promises_size: 256,             // promises size
         read_multiply: 2,               // when we have nodb filers, control how many additional docs to read
     }
-
+    
     module.exports = config;
 
 
