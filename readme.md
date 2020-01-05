@@ -73,9 +73,9 @@
     })();
 </pre>
 
+<details>
+  <summary>$ node demo.js</summary>
 <pre>
-    $ node demo.js 
-
     *** preview result: {"total":"> 100","cached_count":81}
     metrics: {"read_docs":1,"write_docs":1,"delete_docs":0,"runtime":518}
 
@@ -116,10 +116,11 @@
     for current batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO
     for next batch: 	node demo.js 2x7xAh2OteQAorX33uvpYBeGdIZ-2wlXBxTHH4BCypr3FkFASqHbMibqnO NEXT
 </pre>
+</details>
 
+<details>
+  <summary>$ node interactive.js</summary>
 <pre>
-    $ node interactive.js
-
     cleanup items: 0
     metrics: {"read_docs":1,"write_docs":0,"delete_docs":0,"runtime":484}
     ---------------------- batch no: 1 ----------------------
@@ -164,10 +165,11 @@
     P Show previous pages
     N Show next pages
 </pre>
+</details>
 
+<details>
+  <summary>$ node get-batch.js 9SVCj9yVtNQz9XhHyAvmBLe96jA 2</summary>
 <pre>
-    $ node get-batch.js 9SVCj9yVtNQz9XhHyAvmBLe96jA 2
-
     ---------------------- batch no: 2 ----------------------
     ### page no 5
         id,	pageCount,	isbn,	title
@@ -202,6 +204,7 @@
     start_page_no: 5 has_prev: true has_next: true
     metrics: {"read_docs":1,"write_docs":1,"delete_docs":0,"runtime":511}
 </pre>
+</details>
 
 ## config file
 <pre>
