@@ -11,11 +11,10 @@
 
     node import-json.js books.json
 
-3. Copy/paste config file as config.js in .
+3. Copy/paste config file as config.js.
 
+4. demo.js
 <pre>
-    // examples/demo.js
-    //
     const admin = require('firebase-admin');
     const ConfigUtil = require('@samwen/config-util');
     const { Pagination } = require('@samwen/firestore-pagination');
@@ -28,15 +27,12 @@
     (async () => {
     
         let batch_key = null, action = null;
-
         if (process.argv.length > 2) {
             batch_key = process.argv[2];
         }
-
         if (process.argv.length > 3) {
             action = process.argv[3];
         }
-
         const options = {
             batch_key: batch_key,
             select: ['id', 'isbn', 'title'],
@@ -74,7 +70,7 @@
     })();
 </pre>
 
-4. There are 3 examples under examples folders: demo.js, interactive.js and get-batch.js.
+5. There are 3 examples under examples folders: demo.js, interactive.js and get-batch.js.
 
 <details>
   <summary>$ node demo.js</summary>
