@@ -12,7 +12,7 @@
 
     node import-json.js books.json
 
-</pre>
+<pre>
     // examples/demo.js
     //
     const admin = require('firebase-admin');
@@ -72,7 +72,8 @@
             }
     })();
 </pre>
-</pre>
+
+<pre>
     $ node demo.js 
 
     *** preview result: {"total":"> 100","cached_count":81}
