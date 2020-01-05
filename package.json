@@ -1,0 +1,50 @@
+{
+  "name": "@samwen/firestore-pagination",
+  "version": "1.0.0",
+  "description": "pagination for firebase firestore collection",
+  "main": "src/index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000 --reporter spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samswen/firestore-pagination.git"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "pagination",
+    "cloud",
+    "function",
+    "cache",
+    "list",
+    "view",
+    "plp",
+    "api"
+  ],
+  "author": "Sam Wen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samswen/firestore-pagination/issues"
+  },
+  "homepage": "https://github.com/samswen/firestore-pagination#readme",
+  "dependencies": {
+    "@samwen/base62-shax": "^1.0.2",
+    "@samwen/base62-util": "^1.0.1",
+    "@samwen/config-util": "^1.0.1",
+    "firebase-admin": "^8.9.0",
+    "jsonpath": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "mocha": "^6.2.2",
+    "readline": "^1.3.0",
+    "sinon": "^8.0.2"
+  }
+}

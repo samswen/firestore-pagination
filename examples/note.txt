@@ -1,0 +1,10 @@
+books.json
+source: https://github.com/ozlerhakan/mongodb-json-files/blob/master/datasets/books.json
+
+## the ideas:
+
+With the restrictions and benefits of firestore database, it is a challenge to implement pagination operations. A typical pagination operation for a given filter includes:
+
+1)	Show total items
+2)	Move to next page or previous page
+3)	Go to certain page directly.
