@@ -7,10 +7,11 @@
 ## how to use
 
 1. You will need generate private key under service accounts and save it as serviceAccount.json in the project root folder.
-2. There are 3 examples under examples folders: demo.js, interactive.js and get-batch.js.
-3. You can use the import-json.js to import books.json into your firestore database.
+2. You can use the import-json.js to import books.json into your firestore database.
 
     node import-json.js books.json
+
+3. Copy/paste config file as config.js in .
 
 <pre>
     // examples/demo.js
@@ -72,6 +73,8 @@
             }
     })();
 </pre>
+
+4. There are 3 examples under examples folders: demo.js, interactive.js and get-batch.js.
 
 <details>
   <summary>$ node demo.js</summary>
