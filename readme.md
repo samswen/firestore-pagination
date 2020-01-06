@@ -214,7 +214,7 @@
         collection_name: 'books',       // the collection name the pagination is running
         appendix: '_metadata',          // appendix for the collection name that store cached results
 
-        default_sort_field: 'id',       // will be used if no order-by is provided in the flter
+        default_sort_field: 'id',       // will be used if no order-by is provided in the filter
         default_sort_order: 'asc',
         max_sorted_fields: 1,           // more than 1 will need to setup composite index ahead
 
